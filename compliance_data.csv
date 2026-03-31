@@ -1,0 +1,43 @@
+control_id,control_name,control_family,framework,result,severity,tested_date,tester,notes
+AC-2,Account Management,Access Control,NIST 800-53,PASS,LOW,2025-04-01,R. Salhi,All accounts reviewed and validated
+AC-6,Least Privilege,Access Control,NIST 800-53,PASS,LOW,2025-04-01,R. Salhi,Role assignments confirmed with IAM team
+AC-17,Remote Access,Access Control,NIST 800-53,PASS,LOW,2025-04-02,R. Salhi,VPN enforced for all remote sessions
+AC-18,Wireless Access,Access Control,NIST 800-53,REVIEW,MEDIUM,2025-04-02,R. Salhi,Guest network segmentation needs verification
+AC-19,Mobile Device Access,Access Control,NIST 800-53,PASS,LOW,2025-04-03,R. Salhi,MDM policy enforced across all endpoints
+AU-2,Event Logging,Audit and Accountability,NIST 800-53,REVIEW,MEDIUM,2025-04-05,R. Salhi,Log retention at 30 days; requirement is 90 days
+AU-3,Content of Audit Records,Audit and Accountability,NIST 800-53,PASS,LOW,2025-04-05,R. Salhi,All required fields present in log records
+AU-9,Protection of Audit Info,Audit and Accountability,NIST 800-53,PASS,MEDIUM,2025-04-06,R. Salhi,Audit logs write-protected and access-controlled
+AU-12,Audit Record Generation,Audit and Accountability,NIST 800-53,PASS,LOW,2025-04-06,R. Salhi,Logging enabled across all in-scope systems
+CM-2,Baseline Configuration,Configuration Management,NIST 800-53,REVIEW,MEDIUM,2025-04-08,R. Salhi,Baseline documented but not version-controlled
+CM-6,Configuration Settings,Configuration Management,NIST 800-53,FAIL,HIGH,2025-04-08,R. Salhi,14 nodes deviate from approved baseline — see POAM-001
+CM-7,Least Functionality,Configuration Management,NIST 800-53,PASS,LOW,2025-04-09,R. Salhi,Unnecessary services disabled on all servers
+CM-8,System Component Inventory,Configuration Management,NIST 800-53,PASS,LOW,2025-04-09,R. Salhi,Asset inventory current and reconciled
+IA-2,Multi-Factor Authentication,Identification and Authentication,NIST 800-53,PASS,LOW,2025-04-10,R. Salhi,MFA enforced for all privileged and remote accounts
+IA-4,Identifier Management,Identification and Authentication,NIST 800-53,PASS,LOW,2025-04-10,R. Salhi,Account naming conventions and lifecycle controls verified
+IA-5,Authenticator Management,Identification and Authentication,NIST 800-53,REVIEW,MEDIUM,2025-04-11,R. Salhi,Password complexity not enforced on 3 legacy systems — see POAM-004
+IA-8,Non-Org User Authentication,Identification and Authentication,NIST 800-53,PASS,LOW,2025-04-11,R. Salhi,External user accounts validated and scoped
+IR-4,Incident Handling,Incident Response,NIST 800-53,PASS,MEDIUM,2025-04-14,R. Salhi,Incident response plan current and tested
+IR-5,Incident Monitoring,Incident Response,NIST 800-53,PASS,LOW,2025-04-14,R. Salhi,SIEM alerts configured and reviewed weekly
+IR-6,Incident Reporting,Incident Response,NIST 800-53,PASS,LOW,2025-04-15,R. Salhi,Reporting procedures documented and staff trained
+MA-2,Controlled Maintenance,Maintenance,NIST 800-53,PASS,LOW,2025-04-15,R. Salhi,Maintenance windows scheduled and logged
+MA-4,Nonlocal Maintenance,Maintenance,NIST 800-53,PASS,MEDIUM,2025-04-16,R. Salhi,Remote maintenance sessions encrypted and logged
+MP-2,Media Access,Media Protection,NIST 800-53,PASS,LOW,2025-04-16,R. Salhi,Removable media access restricted by policy
+MP-6,Media Sanitization,Media Protection,NIST 800-53,PASS,LOW,2025-04-17,R. Salhi,Sanitization procedures documented and followed
+PE-2,Physical Access Authorizations,Physical Protection,NIST 800-53,PASS,LOW,2025-04-17,R. Salhi,Access lists current and reviewed quarterly
+PE-3,Physical Access Control,Physical Protection,NIST 800-53,PASS,LOW,2025-04-18,R. Salhi,Badge access logs reviewed; no anomalies
+PL-2,System Security Plan,Planning,NIST 800-53,PASS,MEDIUM,2025-04-18,R. Salhi,SSP current and approved by ISSO
+PS-3,Personnel Screening,Personnel Security,NIST 800-53,PASS,LOW,2025-04-21,R. Salhi,Background checks completed for all staff
+PS-4,Personnel Termination,Personnel Security,NIST 800-53,PASS,LOW,2025-04-21,R. Salhi,Offboarding checklist includes access revocation within 24hr
+RA-3,Risk Assessment,Risk Assessment,NIST 800-53,PASS,MEDIUM,2025-04-22,R. Salhi,Annual risk assessment completed and documented
+RA-5,Vulnerability Scanning,Risk Assessment,NIST 800-53,PASS,MEDIUM,2025-04-22,R. Salhi,Nessus scans run weekly; critical findings tracked in POA&M
+SA-3,System Development Life Cycle,System Acquisition,NIST 800-53,PASS,LOW,2025-04-23,R. Salhi,SDLC policy includes security gates
+SA-11,Developer Testing,System Acquisition,NIST 800-53,N/A,N/A,2025-04-23,R. Salhi,No custom development in scope for this assessment
+SC-5,Denial of Service Protection,System Communications,NIST 800-53,PASS,MEDIUM,2025-04-24,R. Salhi,DDoS mitigation in place via CDN and rate limiting
+SC-7,Boundary Protection,System Communications,NIST 800-53,PASS,HIGH,2025-04-24,R. Salhi,Firewall rules reviewed; network segmentation confirmed
+SC-12,Cryptographic Key Management,System Communications,NIST 800-53,PASS,HIGH,2025-04-25,R. Salhi,Key rotation schedule enforced; HSM in use
+SC-28,Protection at Rest,System Communications,NIST 800-53,FAIL,HIGH,2025-04-25,R. Salhi,Encryption at rest not enforced on 2 S3 buckets — see POAM-002
+SC-39,Process Isolation,System Communications,NIST 800-53,PASS,LOW,2025-04-28,R. Salhi,Container isolation confirmed via policy
+SI-2,Flaw Remediation,System Integrity,NIST 800-53,PASS,MEDIUM,2025-04-28,R. Salhi,Patch cycle 30 days for critical; 90 days for low
+SI-3,Malicious Code Protection,System Integrity,NIST 800-53,PASS,LOW,2025-04-29,R. Salhi,AV/EDR deployed on all endpoints; definitions current
+SI-4,System Monitoring,System Integrity,NIST 800-53,PASS,MEDIUM,2025-04-29,R. Salhi,SIEM configured with alerting for all in-scope systems
+SI-7,Software Integrity,System Integrity,NIST 800-53,REVIEW,MEDIUM,2025-04-30,R. Salhi,Code signing not enforced on internal tooling

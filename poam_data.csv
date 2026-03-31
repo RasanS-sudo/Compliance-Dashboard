@@ -1,0 +1,5 @@
+poam_id,control_id,finding_title,risk_level,assigned_to,open_date,due_date,status,remediation_progress_pct,description
+POAM-001,CM-6,Baseline Config Deviation on 14 Nodes,HIGH,Security Team,2025-04-08,2025-08-15,OVERDUE,35,14 production nodes deviate from approved NIST baseline configuration. Non-compliant settings include disabled logging and outdated cipher suites.
+POAM-002,SC-28,Encryption at Rest Not Enforced on S3,HIGH,Cloud Ops,2025-04-25,2025-09-01,IN PROGRESS,60,Two S3 buckets storing sensitive data lack server-side encryption. AES-256 enforcement in progress via bucket policy update.
+POAM-003,AU-2,Log Retention Gap — 30 Days vs 90 Required,MEDIUM,IT Ops,2025-04-05,2025-09-30,IN PROGRESS,80,Current log retention is 30 days. NIST and FedRAMP require 90 days minimum. SIEM policy update 80% complete.
+POAM-004,IA-5,Password Complexity Not Enforced on 3 Systems,MEDIUM,IAM Team,2025-04-11,2025-10-15,ON TRACK,20,Three legacy systems do not enforce password complexity requirements. Group Policy update scoped and in testing.
